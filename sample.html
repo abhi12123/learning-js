@@ -2,14 +2,20 @@
 <html>
 <head>
 	<title>testing out js</title>
+	<script type="text/javascript">
+		function person(name,age) {
+					this.name=name;
+					this.age=age;
+					// body...
+				}		
+		var abhi=new person("Abhinav",21);
+		var mohan=new person("mohanlal",60);
+	</script>
 </head>
-<body onload="alert('site has loaded');" >
-	
-	<form>
-		<input type="button" name="hi" value="hi" >
-		<a href="" onMouseOver="alert('gameover');"> DOnt hover</a>
-		<a href="" onmouseout="alert('blah blah');">dont leave</a>
-	</form>
-
+<body >
+	<script type="text/javascript">
+		document.write(abhi.name);
+		document.write(mohan.age);
+	</script>
 </body>
 </html>
