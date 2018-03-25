@@ -3,19 +3,27 @@
 <head>
 	<title>testing out js</title>
 	<script type="text/javascript">
-		function person(name,age) {
-					this.name=name;
-					this.age=age;
-					// body...
-				}		
-		var abhi=new person("Abhinav",21);
-		var mohan=new person("mohanlal",60);
+		function validator() {
+			if(document.test.Press.checked)
+				alert("yes checked");
+			else
+				alert("not checked");
+			// body...
+		}
 	</script>
 </head>
 <body >
+	<form name="test">
+		username : <input type="text" name="username">
+		password : <input type="password" name="password">
+		<input type="submit" name="submit" value="submit">
+		<input type="checkbox" name="checkbox">
+		<input type="button" name="Press" value="press" onclick="validator()">
+	</form>
 	<script type="text/javascript">
-		document.write(abhi.name);
-		document.write(mohan.age);
+		var y = document.test.length;
+		document.write(x);
+		var x = document.test.elements[0].name;
 	</script>
 </body>
 </html>
